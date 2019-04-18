@@ -8,9 +8,13 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@ComponentScan({"com.pramati.flashsale"})
-@EntityScan("com.pramati.flashsale.model")
-@EnableJpaRepositories("com.pramati.flashsale.repository")
+/*
+ * @ComponentScan({"com.pramati.flashsale"})
+ * 
+ * @EntityScan("com.pramati.flashsale.model")
+ * 
+ * @EnableJpaRepositories("com.pramati.flashsale.repository")
+ */
 public class Application extends SpringBootServletInitializer{
 	
 	public static void main(String args[]) {

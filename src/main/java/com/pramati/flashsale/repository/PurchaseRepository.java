@@ -3,10 +3,9 @@ package com.pramati.flashsale.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.pramati.flashsale.model.User;
+import com.pramati.flashsale.model.Purchase;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Long>{
+public interface PurchaseRepository extends JpaRepository<Purchase, Long>{
 
-		
 }
