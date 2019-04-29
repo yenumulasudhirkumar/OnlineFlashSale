@@ -5,6 +5,11 @@ import org.springframework.data.jpa.repository.Query;
 
 import com.pramati.flashsale.model.RegisteredUserDO;
 
+/**
+ * @author sudhirk
+ *
+ * Interface for RegisteredUserRepository which handles database operations for Registered Users data
+ */
 public interface RegisteredUserRepository extends JpaRepository<RegisteredUserDO, Integer>{
 
 	

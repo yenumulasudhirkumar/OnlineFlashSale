@@ -11,6 +11,11 @@ import com.pramati.flashsale.repository.RegisteredUserRepository;
 import com.pramati.flashsale.service.RegisteredUserService;
 import com.pramati.flashsale.util.ApplicationException;
 
+/**
+ * @author sudhirk
+ *
+ * Service Implementation class for the entity RegisteredUserServiceImpl
+ */
 @Service
 @Transactional(isolation = Isolation.SERIALIZABLE)
 public class RegisteredUserServiceImpl implements RegisteredUserService{

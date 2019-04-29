@@ -17,6 +17,10 @@ import com.pramati.flashsale.service.PurchaseService;
 
 import io.swagger.annotations.ApiModel;
 
+/**
+ * @author sudhirk
+ * Rest Controller class which handles all the api end points for the Entity Purchase
+ */
 @RestController
 @RequestMapping(value="/purchase", produces = MediaType.APPLICATION_JSON_VALUE)
 @ApiModel(value = "Purchase details API's",description="Api calls related to purchases")

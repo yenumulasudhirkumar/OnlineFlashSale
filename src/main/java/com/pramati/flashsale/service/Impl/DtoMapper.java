@@ -9,6 +9,11 @@ import com.pramati.flashsale.model.ProductDO;
 import com.pramati.flashsale.model.SaleDO;
 import com.pramati.flashsale.model.UserDO;
 
+/**
+ * @author sudhirk
+ * 
+ * Dto Mapper class contains the functions for converting data from Dto(Data Transfer Object) to DO (Data Object)
+ */
 public class DtoMapper {
 
 

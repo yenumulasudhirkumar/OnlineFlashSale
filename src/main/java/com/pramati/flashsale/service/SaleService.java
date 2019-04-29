@@ -2,6 +2,11 @@ package com.pramati.flashsale.service;
 
 import com.pramati.flashsale.beans.Sale;
 
+/**
+ * @author sudhirk
+ *
+ * Interface for Sale Service
+ */
 public interface SaleService {
 
 	

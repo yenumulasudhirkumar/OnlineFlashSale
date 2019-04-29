@@ -8,6 +8,12 @@ import com.pramati.flashsale.model.UserDO;
 
 import lombok.Data;
 
+/**
+ * @author sudhirk
+ * 
+ * DTO class for the entity Registered User
+ *
+ */
 @Data
 public class RegisteredUser {
 

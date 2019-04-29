@@ -13,6 +13,11 @@ import com.pramati.flashsale.model.UserDO;
 import com.pramati.flashsale.repository.UserRepository;
 import com.pramati.flashsale.service.UserService;
 
+/**
+ * @author sudhirk
+ *
+ * Service Implementation class for the entity User
+ */
 @Service
 public class UserServiceImpl implements UserService {
 

@@ -17,6 +17,14 @@ import com.pramati.flashsale.beans.RegisteredUser;
 import lombok.Getter;
 import lombok.Setter;
 
+
+
+
+/**
+ * @author sudhirk
+ *
+ * ResgisteredUserDO class holds all the information about Registered Users for anu sale
+ */
 @Entity
 @Table(name="registered_user")
 @Getter

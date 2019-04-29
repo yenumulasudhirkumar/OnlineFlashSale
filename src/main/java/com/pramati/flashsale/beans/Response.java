@@ -5,6 +5,11 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/**
+ * @author sudhirk
+ *
+ * Response class provides the format in which every response is send
+ */
 @Getter
 @Setter
 @JsonInclude(JsonInclude.Include.NON_NULL)

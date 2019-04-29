@@ -8,6 +8,11 @@ import com.pramati.flashsale.repository.ProductRepository;
 import com.pramati.flashsale.service.ProductService;
 
 
+/**
+ * @author sudhirk
+ *
+ *  Service Implementation class for Product Service 
+ */
 @Service
 public class ProductServiceImpl implements ProductService {
 

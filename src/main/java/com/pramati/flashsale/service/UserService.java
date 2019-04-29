@@ -5,6 +5,11 @@ import java.util.List;
 import com.pramati.flashsale.beans.User;
 
 
+/**
+ * @author sudhirk
+ * 
+ *  Interface for User Service
+ */
 public interface UserService {
 
 	

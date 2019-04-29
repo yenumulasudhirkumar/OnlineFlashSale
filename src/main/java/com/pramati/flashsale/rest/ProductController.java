@@ -19,6 +19,12 @@ import com.pramati.flashsale.service.ProductService;
 import io.swagger.annotations.ApiModel;
 
 
+/**
+ * @author sudhirk
+ *
+ *
+ * Rest Controller class which handles all api end points for Product Entity 
+ */
 @RestController
 @RequestMapping(value="/product",produces=MediaType.APPLICATION_JSON_VALUE)
 @ApiModel(value = "Product details API's", description = "Contains CRUD API's for Product details")

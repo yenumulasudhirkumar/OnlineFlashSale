@@ -11,6 +11,11 @@ import com.pramati.flashsale.repository.SaleRepository;
 import com.pramati.flashsale.service.SaleService;
 import com.pramati.flashsale.util.ApplicationException;
 
+/**
+ * @author sudhirk
+ *
+ * Service implementation class for the entity Sale
+ */
 @Service
 public class SaleServiceImpl implements SaleService {
 

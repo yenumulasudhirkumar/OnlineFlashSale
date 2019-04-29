@@ -5,6 +5,11 @@ import javax.validation.constraints.NotNull;
 
 import lombok.Data;
 	
+/**
+ * @author sudhirk
+ *
+ * DTO class for the entity product
+ */
 @Data
 public class Product {
 	

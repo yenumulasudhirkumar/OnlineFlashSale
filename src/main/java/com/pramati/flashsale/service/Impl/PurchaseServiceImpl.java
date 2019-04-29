@@ -23,6 +23,11 @@ import com.pramati.flashsale.repository.SaleRepository;
 import com.pramati.flashsale.service.PurchaseService;
 import com.pramati.flashsale.util.ApplicationException;
 
+/**
+ * @author sudhirk
+ *
+ * Service Implementation class for the entity Purchase
+ */
 @Service
 @Transactional(isolation=Isolation.SERIALIZABLE)
 public class PurchaseServiceImpl implements PurchaseService {
