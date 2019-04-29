@@ -11,6 +11,8 @@ Documentation
         Swagger UI: http://localhost:8090/swagger-ui.html#/
         
 ER Diagram
-        
+
+ ![alt text](https://user-images.githubusercontent.com/8841867/56877375-26697080-6a6b-11e9-8476-bea286bb65bb.png)
+
         
         
