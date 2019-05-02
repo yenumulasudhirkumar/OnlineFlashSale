@@ -51,8 +51,13 @@ public class PurchaseServiceImpl implements PurchaseService {
 		PurchaseDO purchaseDO = purchase.toPurchaseDO();
 		Boolean check = isEligible(purchaseDO);
 		
-		if(check==true)
+		if(check==true) {
+		
+			ProductDO productDO = productRepository.getOne(purchaseDO.getProduct().getProductId());
+			productDO.setAvailabityCount(productDO.getAvailabityCount()-1);
+			productRepository.save(productDO);
 			return purchaseRepository.save(purchaseDO).toPurchaseDto();
+		}
 		else
 			throw new ApplicationException("Cannot create Purchase Order");
 	}
@@ -61,8 +66,8 @@ public class PurchaseServiceImpl implements PurchaseService {
 	public Boolean isEligible(PurchaseDO purchaseDO) {
 		
 		LocalDateTime time = LocalDateTime.now();
-		RegisteredUserDO registerUserOptional = registeredUserRepository.findByUserIdAndSaleId(purchaseDO.getUser().getUserId(),purchaseDO.getSale().getSaleId());
-		if(registerUserOptional!=null) {
+		RegisteredUserDO registerUser = registeredUserRepository.findByUserIdAndSaleId(purchaseDO.getUser().getUserId(),purchaseDO.getSale().getSaleId());
+		if(registerUser!=null) {
 			throw new ApplicationException("User doesn't registered for Sale");
 		}
 
@@ -82,7 +87,7 @@ public class PurchaseServiceImpl implements PurchaseService {
 		
 		ProductDO productDO = productRepository.findById(purchaseDO.getProduct().getProductId()).orElse(null);
 		
-		if(productDO.getAvailabityCount()<=0) {
+		if(productDO!=null&&productDO.getAvailabityCount()<=0) {
 			throw new ApplicationException("Sale is Over .Items are not available");
 		}
 

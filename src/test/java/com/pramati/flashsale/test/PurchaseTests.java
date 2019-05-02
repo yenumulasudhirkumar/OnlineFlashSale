@@ -44,5 +44,9 @@ public class PurchaseTests {
 		assertEquals(1, purchaseResult.getProductId().intValue());
 
 	}
+	
+	
+	
+	
 
 }

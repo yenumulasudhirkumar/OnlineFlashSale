@@ -77,23 +77,4 @@ public class UserController {
 		  
 	  }
 	  
-	
-	
-	/*
-	 * @PutMapping(value = "/{userId}/saleRegistration/{saleId}")
-	 * 
-	 * @ApiOperation("Register user for a flash sale") public User
-	 * registerForSale(@PathVariable("userId") Integer
-	 * userId,@PathVariable("saleId") Integer saleId) {
-	 * 
-	 * User registeredUser = userService.registerUserForSale(userId,saleId);
-	 * 
-	 * Response response = new Response(null, null,
-	 * userService.getUserById(userId)); return new
-	 * ResponseEntity<Response>(response,HttpStatus.OK);
-	 * 
-	 * }
-	 */
-	 
-	  
 }
